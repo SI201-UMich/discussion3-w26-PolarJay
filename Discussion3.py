@@ -34,21 +34,24 @@ class Rectangle():
 def main():
     r1 = Rectangle(10, 10)
     # call the __str__ method
-    print(r1)
+    print(f"r1: {r1}")
     # call the area_calculator method
     print("Area:", r1.area_calculator())
-
+    print()
 
     r2 = Rectangle(10, 15)
-    print(r2)
+    print(f"r2: {r2}")
     print("Area:", r2.area_calculator())
     # call the __eq__ method
-    print(r1 == r2)
+    print(f"Equal: r1 == r2? {r1 == r2}")
     print()
 
     # you can create additional rectangle objects to 
     # test your code or learn more about how the class behaves
-    pass
+    r3 = Rectangle(10, 15)
+    print(f"r3: {r3}")
+    print("Area:", r3.area_calculator())
+    print(f"Equal: r2 == r3? {r2 == r3}")
 
 if __name__ == "__main__":
     main()
